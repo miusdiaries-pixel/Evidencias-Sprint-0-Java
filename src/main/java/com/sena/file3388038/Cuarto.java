@@ -14,7 +14,7 @@ public class Cuarto {
         int edad = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Nota: ");
-        double notaObt = Double.parseDouble(scanner.nextLine());
+        double notaObt = Double.parseDouble(scanner.nextLine().replace(',', '.'));
 
         boolean esMayorDeEdad = edad >= 18;
         String rango = esMayorDeEdad ? "Mayor de edad" : "Menor de edad";
